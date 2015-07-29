@@ -1,0 +1,147 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+    	
+
+    <!--    <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:gravity="center_horizontal"
+            android:text="YOUR"
+            android:textColor="#14a5d4"
+            android:textSize="45sp" /> --> 
+
+         <TextView
+             android:id="@+id/countdownText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:layout_marginTop="60dp"
+            android:layout_centerHorizontal="true"
+            android:text="COUNTDOWN TO 2015"
+            android:textColor="#14a5d4"
+            android:textSize="25sp" 
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+    
+    	<TextView
+            android:id="@+id/daytimer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="26dp"
+            android:layout_marginTop="168dp"
+            android:textColor="#FFFFFF"
+            android:textSize="40sp" />
+        
+        <TextView
+            android:id="@+id/days"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="26dp"
+            android:layout_below="@+id/daytimer"
+            android:text="Days"
+            android:textColor="#B3CCBA"
+            android:textSize="15sp" 
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+    		
+        <TextView
+            android:id="@+id/hourtimer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+			android:layout_marginLeft="86dp"
+            android:layout_marginTop="168dp"
+            android:textColor="#FFFFFF"
+            android:textSize="40sp" />
+        
+        <TextView
+	        android:id="@+id/hours"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/hourtimer"
+	        android:layout_marginLeft="86dp"
+	        android:text="Hours"
+	        android:textColor="#B3CCBA"
+	        android:textSize="15sp" 
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+	    
+        <TextView
+            android:id="@+id/minutetimer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+			android:layout_marginLeft="156dp"
+            android:layout_marginTop="168dp"
+            android:textColor="#FFFFFF"
+            android:textSize="40sp" />
+        
+        <TextView
+	        android:id="@+id/minutes"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/minutetimer"
+	        android:layout_marginLeft="146dp"
+	        android:text="Minutes"
+	        android:textColor="#B3CCBA"
+	        android:textSize="15sp" 
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+        
+        <TextView
+            android:id="@+id/secondtimer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+			android:layout_marginLeft="236dp"
+            android:layout_marginTop="168dp"
+            android:textColor="#FFFFFF"
+            android:textSize="40sp" />
+        
+        <TextView
+	        android:id="@+id/seconds"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/secondtimer"
+	        android:layout_marginLeft="226dp"
+	        android:text="Seconds"
+	        android:textColor="#B3CCBA"
+	        android:textSize="15sp" 
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+   
+      <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+        android:id="@+id/ad_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:gravity="bottom"
+        android:orientation="vertical" >
+
+        <com.google.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            ads:adSize="BANNER"
+            ads:testDevices="TEST_EMULATOR"
+            ads:adUnitId="a152b283614a4c9"
+            ads:loadAdOnCreate="true"
+            android:gravity="center" />
+    </LinearLayout>
+        
+</RelativeLayout>
